@@ -194,6 +194,11 @@
   100% { transform: scale(1); }
 }
 
+@keyframes widget-slide-up {
+  0% { transform: translateY(8px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
 /* ================================================
  * Neo-brutalist Sonner toasts
  * Applied via toastOptions.classNames in sonner.tsx

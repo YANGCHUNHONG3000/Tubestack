@@ -11,6 +11,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { Resizer } from "@/components/resizer";
 import { InfoButton } from "@/components/info-button";
 import { MobileLayout } from "@/components/mobile-layout";
+import { WidgetsBar } from "@/components/widgets/widgets-bar";
 import {
   CategoryPickerModal,
   type PendingVideo,
@@ -691,6 +692,8 @@ export default function Home() {
             </div>
           )}
         </div>
+
+        <WidgetsBar />
       </main>
 
       {/* Resizer: player ↔ queue */}
