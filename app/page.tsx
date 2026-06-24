@@ -12,6 +12,7 @@ import { Resizer } from "@/components/resizer";
 import { InfoButton } from "@/components/info-button";
 import { MobileLayout } from "@/components/mobile-layout";
 import { WidgetsBar } from "@/components/widgets/widgets-bar";
+import { MemoryStatsButton } from "@/components/memory-stats-button";
 import {
   CategoryPickerModal,
   type PendingVideo,
@@ -619,6 +620,7 @@ export default function Home() {
           onPick={handlePickCategory}
           onClose={closePicker}
         />
+        <MemoryStatsButton />
       </>
     );
   }
@@ -731,6 +733,8 @@ export default function Home() {
         onPick={handlePickCategory}
         onClose={closePicker}
       />
+
+      <MemoryStatsButton />
     </div>
   );
 }
