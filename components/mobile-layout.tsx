@@ -10,6 +10,7 @@ import { InfoButton } from "@/components/info-button";
 import { AddCategoryModal } from "@/components/add-category-modal";
 import { MemoryModal } from "@/components/memory-modal";
 import { useConfirm } from "@/components/confirm-modal";
+import { WidgetsBar } from "@/components/widgets/widgets-bar";
 import { canonicalUrl } from "@/lib/youtube";
 import type { Category, Video } from "@/lib/types";
 
@@ -171,6 +172,11 @@ export function MobileLayout(props: Props) {
           onReset={props.onResetVideo}
           onReorder={props.onReorderVideos}
         />
+      </div>
+
+      {/* Widgets bar at bottom of mobile column */}
+      <div className="border-t-2 border-black bg-stone-100 p-2 pb-3 dark:border-zinc-100 dark:bg-zinc-950">
+        <WidgetsBar />
       </div>
 
       {/* Floating Memory FAB (bottom-left) */}
